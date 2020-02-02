@@ -38,7 +38,7 @@ class DBUtil(object):
         self.db_engine = None
 
     def create_session_factory(self,
-                               con_str='mysql+pymysql://zimt8:Debug.zimt8@www.zimt8.com:33061/zimt8?charset=utf8mb4?connect_timeout=30'):
+                               con_str=''):
         self.db_engine = create_engine(
             con_str,
             pool_pre_ping=True,

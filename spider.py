@@ -12,8 +12,8 @@ from pymongo import MongoClient
 
 class NcovSpider(object):
     def __init__(self):
-        self.url_area = 'http://lab.isaaclin.cn/nCoV/api/area?latest=0'
-        self.url_overall = 'http://lab.isaaclin.cn/nCoV/api/overall?latest=0'
+        self.url_area = 'https://lab.isaaclin.cn/nCoV/api/area?latest=0'
+        self.url_overall = 'https://lab.isaaclin.cn/nCoV/api/overall?latest=0'
         self.ohttp = HttpClass()
         self.host = '127.0.0.1'
         self.port = 27017
