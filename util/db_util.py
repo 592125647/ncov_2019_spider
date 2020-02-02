@@ -38,7 +38,7 @@ class DBUtil(object):
         self.db_engine = None
 
     def create_session_factory(self,
-                               con_str=''):
+                               con_str):
         self.db_engine = create_engine(
             con_str,
             pool_pre_ping=True,
